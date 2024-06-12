@@ -1,0 +1,157 @@
+/*stack overflow has recommended to us to start with Zero
+padding for mobile*/
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+body{
+    background-image: url(images/Background.png);
+    font-family: "Centory Gothic", CenturyGothics, ApppleGothic,sans-serif;
+}
+#hr{ /* shifts words or block into a lower level (its invisible) */
+    border-width: 10px;
+    margin:5px;
+}
+
+#title{
+    font-size: 56.5px;
+    font-family: Bodoni MT Black;
+    color: black;
+    margin: 15px 15px;
+    padding: 0px 5px;
+}
+
+#instruction{
+    font-size: 30px;
+    border: 5px;
+    font-family: bold;
+    border-style: solid;
+    border-color: white;
+    color: black;
+    font-family: Lucida Bright;
+    margin: 15px 15px;
+    padding: 0px 5px;
+}
+#level-button{
+    font-size: 40px;
+    font-family: Bodoni MT Black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    padding: 5px 45px;
+    margin: 20px;
+    display: inline-flex;
+    color: black;
+}
+#level-button:active {
+    border-color: green;
+    color: green;
+}
+/* css for level 0,1,2*/
+/* level 0 -css*/
+#level{
+    font-size: 59px;
+    font-family: Bodoni MT Black;
+    color: black;
+    margin-left: 41%;
+    margin-top: -25%;
+}
+#line{
+    background-color:#ff9933;
+    text-align: center;
+    margin-top: 10%;
+    padding:2px;
+    font-family: Bahnschrift SemiBold;
+}
+#equation{
+    font-size: 40px;
+    border:7px;
+    text-align: center;
+    justify-content: center;
+    display: flex; /* text in one line*/
+    
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    color: black;
+    background-color: #ff9933;
+    
+    margin-left: 30px;
+    
+    width: 300px;
+    margin: auto;  
+}
+#userinput{
+    font-size: 40px;
+    border:3px;
+    text-align: center;
+    justify-content: center;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    color: black;
+    
+    padding: 20px;
+    overflow: hidden;
+    width: 250px;
+    margin: auto;
+    margin-left: 30px;
+   
+}
+#check{
+    font-size: 40px;
+    border:2px;
+    text-align: center;
+    justify-content: center;
+    display: flex; /* text in one line*/
+    font-family: Bahnschrift SemiBold;
+    border-color: #333333;
+    border-style: solid;
+    border-radius: 20px;
+    color: black;
+    background-color: #ffcccc;
+    
+    margin-left: 30px;
+    
+    width: 200px;
+    margin: auto;   
+}
+
+
+
+
+/*finished button*/
+#finished{
+    font-size: 45px;
+    border:3px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    
+    margin: 5px auto;
+    padding: 5px 0px;
+    text-align: center;
+    width: 325px;
+    
+}
+#next-question{
+        font-size: 45px;
+    border:3px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    
+    margin: 5px auto;
+    padding: 5px 0px;
+    text-align: center;
+    width: 345px;
+    
+}

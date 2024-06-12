@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Math Game - Ronja - Level - 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+    </head>
+    <!-- 1- TIME PROCESS --Javascript comment -->
+        <!-- step: onload= start time -->
+    <body onload=startTime();>
+        <!-- step: activate audio -->
+        <audio id="myaudio">
+            <source src="../sounds/cheer_8k_1.mp3">
+        </audio>
+        <!-- step: in this area, we will have a limited width to fit 
+        my digital screen and it has to be in vertical -->
+        <div id="menu">
+            <!-- important information to use -->
+            <a href="../index.html"><image src="../images/logo.png" width="130" height="130"/></a>
+            <h1 id="level"> Level 1</h1>
+            <div id="line">
+            <h1 id="instruction-level"> 1/10</h1>
+            <h1 id="score">Score: </h1>
+            </div>
+            <br>
+         <!-- this division pass number and operator 
+          seperated as an equation -->
+         <div id="equation"> <!-- concept formula 1+1= -->
+              <h1 id="num1" style="padding: 0 7px">1 </h1>
+              <h1 id="operator" style="padding: 0 7px"> +</h1>
+              <h1 id="num2" style="padding: 0 7px"> 1=</h1>
+          </div>
+         
+         <br>
+         
+         <!-- step i want to create 4 buttons
+         The buttons randomly plays a key role as the answer 
+         or correct answer
+         -->
+         <div>
+             <button onclick="compare_answer(1)" id="option1"></button>
+             <button onclick="compare_answer(2)" id="option2"></button>
+             <button onclick="compare_answer(3)" id="option3"></button>
+             <button onclick="compare_answer(4)" id="option4"></button>
+         </div>
+         
+         <br>
+         
+         <!-- step: start a function to go to the next question -->
+         <button hidden  onclick="startTimer()" id="next-question"> Next question</button>
+        <!-- Not the button that user can click-->
+        <h1 hidden id="finished">Finished!</h1>
+        
+        <button>return</button>
+        </div>
+        
+        <!-- activated javascript-->
+        <script src="script/Level-0.js"> </script>
+            
+    </body>
+</html>

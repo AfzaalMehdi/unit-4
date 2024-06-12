@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Math Game - Ronja - Level - 0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+    </head>
+    <!-- 1- TIME PROCESS --Javascript comment -->
+        <!-- step: onload= start time -->
+    <body>
+        <!-- step: activate audio -->
+        <audio id="myAudio">
+            <source src="../sounds/cheer_8k_1.mp3">
+        </audio>
+        <!-- step: in this area, we will have a limited width to fit 
+        my digital screen and it has to be in vertical -->
+        <div id="menu">
+            <!-- important information to use -->
+            <a href="../index.html"><image src="../images/logo.png" width="130" height="130"/></a>
+            <h1 id="level"> Level 0 </h1>
+            <div id="line">
+            <span id="countDown">Timer:</span>
+            <h1 id="number"> 1/10</h1>
+            <h1 id="score">Score: 0</h1>
+            </div>
+            <br>
+         <!-- this division pass number and operator 
+          seperated as an equation -->
+         <div id="equation"> <!-- concept formula 1+1= -->
+              <h1  id="num1" style="padding: 0 7px">1 </h1>
+              <h1 id="operator" style="padding: 0 7px"> /</h1>
+              <h1 id="num2" style="padding: 0 7px"> 1=</h1>
+          </div>
+         
+         <br>
+         
+         <!-- step i want to create 4 buttons
+         The buttons randomly plays a key role as the answer 
+         or correct answer
+         -->
+         <div>
+             <input id="userinput" placeholder="Your Answer">
+         </div>
+         
+         <br>
+         
+         <button id="check">Check Answer</button>
+         <!-- step: start a function to go to the next question -->
+         <button hidden  onclick="startTimer()" id="next-question">Next question</button>
+        <!-- Not the button that user can click-->
+        <h1 hidden id="finished">Finished!</h1>
+        
+        </div>
+        
+        <!-- activated javascript-->
+        <script src="../script/Level-0.js"></script>
+            
+    </body>
+</html>
